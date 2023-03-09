@@ -1,11 +1,10 @@
 def draw_stairs(n):
     # do something
+    stairs = ''
     for i in range(n):
-        print(" " * i, end=" ")
-        print("I")
-#         for j in range(i):
-#             print(i,j)
-#             # print("I")
-#             j=j+1
-# #                 print(" ") 
-draw_stairs(3)
+        for j in range(i):
+            stairs += ' '
+        stairs += 'I\n'
+    return stairs.rstrip()
+        
+draw_stairs(7)
